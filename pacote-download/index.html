@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcelamento</title>
+    <link rel="icon" type="image/jpg" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Parcelamento</h1>
+
+    <main id="id_main">
+        <form id="id_formulario">
+            <label for="id_valor">Digite o <b>VALOR À VISTA</b> do produto: </label>
+            <input type="number" name ="valor" id="id_valor" step="0.01" min="0" value="0" required>
+            <label for="id_entrada">Foi dado algum <b>VALOR DE ENTRADA</b>?</label>
+            <input type="number" name="entrada" id="id_entrada" step="0.01" min="0" value="0" required>   
+            <input type="button" value="Calcular" id="id_botao" onclick="calcular()">         
+        </form>
+    </main>
+
+    <div id="id_resultados"></div>
+
+    <footer>
+        <p>Software version: 130723</p>
+        <p>&copy; K A MARÓSTICA & CIA LTDA</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calcular.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
